@@ -1,0 +1,80 @@
+<html>
+    <head>
+    </head>
+    <body>  <!--  visible part of a webpage -->
+        <form name=”calculator”>   <!-- form element is to serve as a wrapper (container) for the table which will contain the main calculator components. -->
+       
+                    <div id='wrap'>  
+                            <table border="1">  
+             <tr>
+             <td colspan="3" ><!-- display area of the calculator-->
+             <input type="text" id="result" readonly></td><!-- type attribute has to be set to text to accommodate both numbers and symbols (operators) -->
+             <td><input type="button" value="C" id="cl" onClick="cleard()"></td>
+            </tr>
+
+          <tr>
+          <td>
+          <input type="button" name="one" class="onNum" value="1">
+         </td>
+          <td>
+              <input type="button" name="two" class="onNum" value="2">
+          </td>
+          <td>
+          <input type="button" name="three" value="3" class="onNum">
+          </td>
+          <td>
+          <input type="button" class="operator onNum" name="plus" value="+">
+          </td>
+           </tr>   
+           
+           <tr>
+                <td>
+                <input type="button" name="four" value="4" class="onNum">
+                </td>
+                <td>
+                    <input type="button" name="five" value="5" class="onNum">
+                </td>
+                <td>
+                <input type="button" name="six" value="6" class="onNum">
+                </td>
+                <td>
+                <input type="button" class="operator onNum" name="minus" value="-">
+                </td>
+                 </tr> 
+
+                 <tr>
+                        <td>
+                        <input type="button" name="seven" value="7" class="onNum">
+                        </td>
+                        <td>
+                            <input type="button" name="eight" value="8" class="onNum">
+                        </td>
+                        <td>
+                        <input type="button" name="nine" value="9" class="onNum">
+                        </td>
+                        <td>
+                        <input type="button" class="operator onNum" name="multi" value="*">
+                        </td>
+                         </tr> 
+
+                         
+                        <tr>
+                        <td>
+                        <input type="button" name="c" value="c" class="onNum">
+                        </td>
+                        <td>
+                            <input type="button" name="zero" value="0" class="onNum">
+                        </td>
+                        <td>
+                        <input type="button" class="operator onNum" name="division" value="/">
+                        </td>
+                        <td>
+                        <input type="button" name="equalsto" value = "="  id="equals" onclick="solve()"></td>
+                      
+                         </tr>
+         </table>
+        </div>
+        </form>
+        <script src="/JS/main.js"></script>
+    </body>
+ </html>
